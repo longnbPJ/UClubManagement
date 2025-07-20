@@ -1,0 +1,220 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 14, 2025, 12:14:38 AM
+    Author     : PC ASUS
+*/
+
+.addUserTable {
+    padding: 40px;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-radius: .35rem;
+}
+
+.addUserTable table{
+    width: 90%;
+}
+
+.addUserTable input[type=text],
+.addUserTable input[type=file],
+.addUserTable select {
+    width: 100%;
+    margin: 4px 10px;
+}
+
+.addUserTable input[type=submit] {
+    min-width: 80px;
+    margin: 9px 10px;
+    background-color: #4e7bff;
+    color: #ffffff;
+    border: none;
+}
+
+.addUserTable input[type=submit]:hover {
+    opacity: 0.9;
+}
+
+.addUserSubmit {
+    display: flex;
+    justify-content: end;
+}
+
+table th:hover {
+    cursor: pointer;
+}
+
+table .btn {
+    min-width: 60px;
+    margin: 2px 0;
+}
+
+#notification {
+    position: fixed; /* Giữ cố định trên màn hình */
+    bottom: 20px; /* Khoảng cách từ dưới lên */
+    right: 20px; /* Khoảng cách từ phải qua */
+    z-index: 1050; /* Đảm bảo hiển thị trên các phần tử khác */
+    min-width: 250px; /* Giới hạn kích thước tối thiểu */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Đổ bóng để nổi bật hơn */
+}
+
+
+/* Notification Button */
+.notification-container {
+    position: relative;
+    display: inline-block;
+    width:100%;
+}
+
+.notification-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -4px;
+    right: -2px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 0px 6px;
+}
+
+.noti-btn {
+    padding: 2px 8px;
+    background-color: transparent;
+    border: none;
+}
+
+.noti-btn i{
+    color: var(--accent-color);
+}
+/* Dropdown Menu */
+.notification-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 96vw;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 100;
+    overflow: hidden;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+.notification-dropdown.show {
+    display: block;
+}
+
+/* Notification Item */
+.notification-item {
+    display: flex;
+    align-items: start;
+    padding: 10px !important;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none;
+    color: black;
+    transition: background 0.3s;
+}
+
+.notification-item:hover {
+    background-color: #f8f9fa;
+}
+
+.receiverLink img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.notification-content {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.notification-content h6 {
+    font-size: 14px;
+    margin-bottom: 3px;
+    color: #000;
+}
+
+.notification-content p {
+    font-size: 12px;
+    margin-bottom: 3px;
+    white-space: normal;
+    word-wrap: break-word;
+    color: #7d7d7d;
+}
+
+.notification-time {
+    font-size: 10px;
+    color: gray;
+}
+
+/* Thanh cuộn */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px; /* Độ rộng thanh cuộn dọc */
+    height: 8px; /* Độ rộng thanh cuộn ngang */
+}
+
+/* Phần "track" (nền của thanh cuộn) */
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;  /* Màu nền track */
+    border-radius: 10px;  /* Bo góc nền track */
+}
+
+/* Phần "thumb" (nút di chuyển) */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #888; /* Màu của thumb */
+    border-radius: 10px; /* Bo góc cho thumb */
+}
+
+/* Khi hover vào thanh cuộn */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Màu khi hover */
+}
+
+.noti-header {
+    color:#000;
+    text-align: center;
+    margin:8px 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ccc;
+    user-select:none;
+}
+
+@media(min-width: 1200px) {
+    .notification-dropdown {
+        right: 0;
+        left: auto;
+        width:350px;
+    }
+}
+
+.NotiHeading {
+    color: #737373;
+    font-style: italic;
+    padding: 4px;
+    padding-left: 40px;
+}
